@@ -1,0 +1,129 @@
+body {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffd1dc, #ffe4e1);
+    margin: 0;
+    padding: 0;
+    color: #6b2e3e;
+}
+
+.page {
+    display: none; /* As páginas começam ocultas */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.page.active {
+    display: block; /* Exibe a página ativa */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff8c94, #ffaaa5);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.photos img {
+    width: 80px;
+    max-width: 80px;
+    height: auto;
+    border-radius: 50px;
+    border: 2px solid #ffd1dc;
+}
+
+.page5 {
+    text-align: center;
+    padding: 20px;
+}
+
+.photo-flex {
+    display: flex;
+    flex-wrap: wrap;   /* Para garantir que as imagens se movam para a linha seguinte */
+    justify-content: center; /* Centraliza as imagens dentro do contêiner */
+    gap: 10px;  /* Espaçamento entre as imagens */
+}
+
+.photo-flex img {
+    width: 45%;    /* Cada imagem ocupa 45% da largura do contêiner */
+    max-width: 150px; /* Garantindo o tamanho máximo das imagens */
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #ffd1dc; /* Cor de borda suave */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+   .photo-flex {
+        justify-content: space-around; /* Ajusta o espaço entre as imagens em telas menores */
+    }
+
+    button {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .photos img {
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .photo-flex {
+        justify-content: center; /* Centraliza as imagens em telas muito pequenas */
+    }
+
+    .photo-flex img {
+        width: 40%;  /* Aumenta a largura das imagens em telas muito pequenas */
+    }
+}

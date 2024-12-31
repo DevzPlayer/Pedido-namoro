@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importante!</title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page1" class="page active">
+        <h1>OLÁ QUERIDA MARIA EDUARDA</h1>
+        <p>tenho algo importante que quero te contar</p>
+        <img src="https://i.pinimg.com/originals/30/45/10/304510c91af687ef0c23e504987564bc.gif" alt="Gif romântico de Enrolados">
+        <button onclick="showPage(2)">Próximo</button>
+    </div>
+
+    <div id="page2" class="page">
+        <h1>Bom </h1>
+        <div class="photos">
+            <img src="./src/images/yor.jpg" alt="Foto 1">
+            <img src="./src/images/loid.jpg" alt="Foto 2">
+        </div>
+        <p>Algo que vem crescendo dentro de mim e acho que agora é o momento de compartilhar com você.</p>
+        <button onclick="showPage(1)">Voltar</button>
+        <button onclick="showPage(3)">Continuar</button>
+    </div>
+
+    <div id="page3" class="page">
+        <h1>Olha essa Gatinha</h1>
+        <div class="photos">
+            <img src="./src/images/linda00.jpg" alt="Foto 1">
+            <img src="./src/images/linda01.jpg" alt="Foto 2">
+        </div>
+        <p>Cada momento que passamos juntos tem sido incrível. Não só me faz sorrir, mas também me faz perceber como sou sortudo por te conhecer.</p>
+        <audio id="loveSong" autoplay>
+            <source src="musica.mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="showPage(2)">Voltar</button>
+        <button onclick="showPage(4)">Continuar</button>
+    </div>
+
+    <div id="page4" class="page">
+        <h1>Apesar de sermos ruim no ML</h1>
+        <img src="./src/images/ruim.jpg" alt="Foto ruim">          
+        <p>Desde que começamos a conversar, tenho me sentido muito feliz e conectado a você. Cada conversa nossa me faz perceber o quanto você é especial</p>
+        <button onclick="showPage(2)">Voltar</button>
+        <button onclick="showPage(5)">Continuar</button>     
+    </div>
+
+    <div id="page5" class="page">
+    <h1>E mesmo Longe</h1>
+    <div class="photo-flex">
+        <img src="./src/images/linda11.jpg" alt="Foto 4">
+        <img src="./src/images/linda07.jpg" alt="Foto 7">
+        <img src="./src/images/linda08.jpg" alt="Foto 8">
+        <img src="./src/images/linda09.jpg" alt="Foto 9">
+        <img src="./src/images/linda10.jpg" alt="Foto 10">
+        <img src="./src/images/linda12.jpg" alt="Foto 12">
+        <img src="./src/images/linda13.jpg" alt="Foto 13">
+        <img src="./src/images/linda06.jpg" alt="Foto 06">
+    </div>
+        <p>Mesmo sem termos nos encontrado pessoalmente ainda, sinto que já compartilhamos momentos incríveis. Cada mensagem, cada conversa, tem sido algo muito significativo para mim. E, mesmo à distância, sinto que estamos criando lembranças especiais.</p>
+        <button onclick="showPage(4)">Voltar</button>
+        <button onclick="showPage(6)">Continuar</button>
+    </div>
+    
+    <div id="page6" class="page">
+        <h1>Bom e aqui vai minha pergunta pra você.  Na verdedade meu pedido para você</h1>
+        <img src="https://i.gifer.com/QHqW.gif" alt="Gif romântico de Enrolados">
+        <p>Maria Eduarda, quer namorar comigo?</p>
+        <button onclick="showPage(8)">Não ⛔️</button>
+        <button onclick="showPage(7)">Sim ✅️</button>
+    </div>
+    </div>
+
+    <div id="page7" class="page">
+    <div class="thank-you-container">
+        <h1>Minha Querida Maria Eduarda, Você É Tudo Para Mim</h1>
+        <img src="https://i.pinimg.com/originals/11/8a/c9/118ac94d9f00f9b668223113a5944af4.gif" alt="">
+        <p>Com você, encontrei o verdadeiro significado da felicidade. Esse é apenas o começo de uma linda história, onde cada capítulo será repleto de amor, carinho e sorrisos. ❤️😍 <3</p>
+    </div>
+</div>
+    
+    <div id="page8" class="page">
+        <h1>Vai namorar comigo sim!</h1>
+        <img src="https://i.makeagif.com/media/8-30-2015/HM2UJW.gif" alt="Not">
+        <p>Rummm Eu num mandei recusar uai ❤️😊</p>
+    <button onclick="showPage(7)">Sim ✅️</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
